@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Race Registration!</h1>
+    </header>
+
+    <section id="registration_form">
+
+        <form action="">
+
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" required>
+
+                <label for="lastName">LastName</label>
+                <input type="text" name="lastName" id="lastName" required>
+            </div>
+
+            <br>
+            <div>
+                <label for="Reason">Select a Race</label><br>
+                <br>
+                <div>
+                    <input type="radio" name="Reason" id="fun" value="fun" required>
+                    <label for="fun">Fun Run 5k</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="Reason" id="half" value="half" required>
+                    <label for="half">Half Marathon</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="Reason" id="full" value="full" required>
+                    <label for="full">Full Marathon</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div>
+                <label for="ageGroup">Select Age Group</label>
+                <select name="ageGroup" id="ageGroup">
+                    <option value="u18">under 18</option>
+                    <option value="1830">18-30</option>
+                    <option value="3050">30-50</option>
+                    <option value="a50">50+</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="button">Register!</button>
+            </div>
+
+        </form>
+
+    </section>
+</body>
+</html>
